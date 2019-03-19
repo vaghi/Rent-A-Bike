@@ -4,7 +4,7 @@ Project that modelates a solution to a bike store that only rent bikes.
 
 ## Getting Started
 
-The project was made on C# using Micorsoft Visual Studio Community 2017
+The project was made on C# using Microsoft Visual Studio Community 2017
 
 ### Installing
 
