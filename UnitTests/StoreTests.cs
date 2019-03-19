@@ -225,7 +225,7 @@ namespace StoreTests
             decimal currentRent = 0;
             List<Rental> newRental;
 
-            for (var i = 2; i < 10; i++)
+            for (var i = 1; i < 20; i++)
             {
                 addBikes(newStore, i);
                 newRental = new List<Rental>();
