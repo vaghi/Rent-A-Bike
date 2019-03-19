@@ -26,7 +26,7 @@ If the number of services request exceeds the quantity of available bikes, the r
 
 ## Running the tests
 
-The tests can be run from Visual Studio throw the Test Explorer or from the Menu:
+The tests can be run from Visual Studio through the Test Explorer or from the Menu:
 ```
 Test -> Run -> All Tests
 ```
