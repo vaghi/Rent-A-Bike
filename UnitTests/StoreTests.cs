@@ -225,12 +225,14 @@ namespace StoreTests
             decimal currentRent = 0;
             List<Rental> newRental;
 
-            for (var i = 1; i < 20; i++)
+            //Creating rentals from 1 bike to 20 bikes at a time
+            for (var i = 1; i <= 20; i++)
             {
                 addBikes(newStore, i);
                 newRental = new List<Rental>();
                 currentRent = 0;
 
+                //For each bike, we add a rental with random quantity and random service
                 for (int j = 0; j < i; j++) {
                     int randomQuantity = randomGenerator.Next(2, 100);
                     Array values = Enum.GetValues(typeof(ServiceType));
@@ -239,6 +241,7 @@ namespace StoreTests
                     currentRent += randomQuantity * (int)randomServiceType;
                 }
 
+                //We check if the discount should be applied
                 if (i >= newStore.getMinFamilyDiscount() && i <= newStore.getMaxFamilyDiscount())
                     currentRent = currentRent * (1 - newStore.getFamilyDiscount() / 100);
 
